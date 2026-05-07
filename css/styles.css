@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /* -------------Variables */
 :root{
---green-color:#7ACC2D;
---white-color:white;
+--color-principal:white;
+--color-secundario:#7ACC2D;
+--color-fondo: white;
+--font-principal: 'Open Sans', sans-serif;
 --black-color:#313337;
 /* Tipografía */
 --normal:12px;
@@ -24,13 +26,13 @@ html,body{
   padding:0px;
   margin:0px;
   font-size: var(--normal);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-principal);
 }
 
 
 nav{
   display: flex;
-  background-color: var(--green-color);
+  background-color: var(--color-secundario);
   padding: var(--space);
   color: var(--white-color);
   justify-content: space-between;
@@ -53,7 +55,7 @@ nav li a{
 }
 
 nav li a:hover{
-  color: var(--white-color);
+  color: var(--color-principal);
 }
 
 /* footer{
@@ -83,7 +85,7 @@ nav li a:hover{
   margin-top: -240px;
 }
 .product .content{
-  background-color: var(--white-color);
+  background-color: var(--color-fondo);
   padding: var(--space);
   box-shadow: var(--box);
 }
@@ -92,11 +94,11 @@ nav li a:hover{
 }
 
 .main_button{
-  background-color: var(--green-color);
+  background-color: var(--color-secundario);
   width: 100%;
   padding: var(--space);
   font-size: var(--normal);
-  color: var(--white-color);
+  color: var(--color-principal);
   border:0;
   cursor: pointer;
   border-radius: 2px;
@@ -124,7 +126,7 @@ nav li a:hover{
 }
 
 .content-benefit {
-    background-color: var(--white-color);
+    background-color: var(--color-fondo);
     padding: var(--space);
     text-align: center;     
     border-radius: 8px;
@@ -173,7 +175,7 @@ nav li a:hover{
 }
 
 .content-mention {
-    background-color: white;
+    background-color: var(--color-fondo);
     overflow: hidden;
     padding: 0;
     -webkit-box-shadow: 0px 0px 10px var(--box-mention);
@@ -204,7 +206,7 @@ nav li a:hover{
 .footer-hero {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--color-principal);
     background-color: var(--footer-color);
     padding: 0 10px;
 }
