@@ -1,18 +1,4 @@
 
-@media (max-width: 600px) {
-    .mentions {
-        flex-direction: column;
-    }
-
-    .benefits {
-        flex-direction: column;
-    }
-
-    .products {
-        flex-direction: column;
-    }
-}
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /* -------------Variables */
 :root{
